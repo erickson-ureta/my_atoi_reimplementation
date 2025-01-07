@@ -72,11 +72,11 @@ bool run_my_atoi_test_case(const char *input, int expected_val, bool print_pass)
 
 int main()
 {
-    for (int i = -100000; i <= 100000; i++)
+    for (int i = -100000000; i <= 100000000; i++)
     {
         char i_str[12];
         sprintf(i_str, "%d", i);
-        run_my_atoi_test_case(i_str, i, true);
+        run_my_atoi_test_case(i_str, i, false);
     }
 
     run_my_atoi_test_case("1234", 1234, true);
